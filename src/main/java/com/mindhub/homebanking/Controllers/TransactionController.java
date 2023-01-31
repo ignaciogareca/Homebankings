@@ -3,9 +3,9 @@ package com.mindhub.homebanking.Controllers;
 
 import com.mindhub.homebanking.DTO.TransactionDTO;
 import com.mindhub.homebanking.DTO.pdfDTO;
-import com.mindhub.homebanking.Services.AccountServices;
-import com.mindhub.homebanking.Services.ClientServices;
-import com.mindhub.homebanking.Services.TransactionServices;
+import com.mindhub.homebanking.services.AccountServices;
+import com.mindhub.homebanking.services.ClientServices;
+import com.mindhub.homebanking.services.TransactionServices;
 import com.mindhub.homebanking.models.*;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
@@ -40,7 +40,7 @@ public class TransactionController {
     }
     @RequestMapping("/api/transactions/{id}")
     public TransactionDTO getTransactions(@PathVariable Long id) {
-      return transactionServices.getTransactionbyId(id);
+      return transactionServices.getTransactionById(id);
 
     }
 

@@ -3,8 +3,8 @@ package com.mindhub.homebanking.Controllers;
 
 import com.mindhub.homebanking.Configurations.WebAuthentication;
 import com.mindhub.homebanking.DTO.ClientDTO;
-import com.mindhub.homebanking.Services.AccountServices;
-import com.mindhub.homebanking.Services.ClientServices;
+import com.mindhub.homebanking.services.AccountServices;
+import com.mindhub.homebanking.services.ClientServices;
 import com.mindhub.homebanking.models.Account;
 import com.mindhub.homebanking.models.AccountType;
 import com.mindhub.homebanking.models.Client;
@@ -49,7 +49,7 @@ public class ClientController {
     @RequestMapping("/api/clients/{id}") // end point
     public ClientDTO getClient(@PathVariable Long id) { //Trae lo que varia de la ruta , en este caso el id
 
-        return clientServices.getClientbyId(id);
+        return clientServices.getClientById(id);
 
     }
 

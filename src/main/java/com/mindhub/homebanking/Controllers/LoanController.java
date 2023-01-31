@@ -2,7 +2,7 @@ package com.mindhub.homebanking.Controllers;
 
 import com.mindhub.homebanking.DTO.LoanApplicationDTO;
 import com.mindhub.homebanking.DTO.LoanDTO;
-import com.mindhub.homebanking.Services.*;
+import com.mindhub.homebanking.services.*;
 import com.mindhub.homebanking.models.*;
 import com.mindhub.homebanking.repositories.*;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -47,7 +47,7 @@ public class LoanController {
     public ResponseEntity<Object> newLoans(@RequestBody LoanApplicationDTO loanApplicationDTO, Authentication authentication) { //token que aloja datos de cliente autenticado( token)
 
         Client clientCurrent = clientServices.findByEmail(authentication.getName());
-        Loan loanExist = loanServices.getLoanbyId(loanApplicationDTO.getId());
+        Loan loanExist = loanServices.getLoanById(loanApplicationDTO.getId());
         Account accountDestiny = accountServices.findByNumber(loanApplicationDTO.getNumberDestinAccount());
 
         if (clientCurrent != null) {

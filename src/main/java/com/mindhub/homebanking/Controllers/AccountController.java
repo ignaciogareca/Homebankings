@@ -2,8 +2,8 @@ package com.mindhub.homebanking.Controllers;
 
 import com.mindhub.homebanking.DTO.AccountDTO;
 import com.mindhub.homebanking.DTO.ClientDTO;
-import com.mindhub.homebanking.Services.AccountServices;
-import com.mindhub.homebanking.Services.ClientServices;
+import com.mindhub.homebanking.services.AccountServices;
+import com.mindhub.homebanking.services.ClientServices;
 import com.mindhub.homebanking.models.Account;
 import com.mindhub.homebanking.models.AccountType;
 import com.mindhub.homebanking.models.Client;
@@ -37,7 +37,7 @@ public class AccountController {
 
     @RequestMapping("/api/accounts/{id}")
     public AccountDTO getAccount(@PathVariable Long id) {
-        return accountServices.getAccountbyId(id);
+        return accountServices.getAccountById(id);
 
     }
 

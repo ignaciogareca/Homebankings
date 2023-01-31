@@ -1,8 +1,8 @@
 package com.mindhub.homebanking.Controllers;
 
 
-import com.mindhub.homebanking.Services.CardServices;
-import com.mindhub.homebanking.Services.ClientServices;
+import com.mindhub.homebanking.services.CardServices;
+import com.mindhub.homebanking.services.ClientServices;
 import com.mindhub.homebanking.models.Card;
 import com.mindhub.homebanking.models.CardColor;
 import com.mindhub.homebanking.models.CardType;
