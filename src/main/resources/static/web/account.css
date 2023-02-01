@@ -11,11 +11,11 @@
 }
 
 .colornav {
-  --body-color:rgb(119, 108, 211);
-  --sidebar-color: #0C1633;
-  --primary-color:#15295D;
-  --primary-color-light: rgb(59, 41, 128);
-  --toggle-color: #1F3C88;
+  --body-color:rgb(108, 187, 211);
+  --sidebar-color: #0c2e33;
+  --primary-color:#15465d;
+  --primary-color-light: rgb(41, 103, 128);
+  --toggle-color: #1f6f88;
   --text-color:white;
 
   /* TRANSITION */
@@ -24,9 +24,7 @@
 }
 
 body{
-background: rgb(12,14,52);
-  background: radial-gradient(circle, rgba(12,14,52,1) 46%, rgba(38,51,94,1) 85%);
-
+   background-image: url(./assets2/dark-paths.webp);
 }
 
 html {

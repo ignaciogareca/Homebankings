@@ -24,9 +24,14 @@
 }
 
 body{
-  background: rgb(12,14,52);
-    background: radial-gradient(circle, rgba(12,14,52,1) 46%, rgba(38,51,94,1) 85%);
+  background: rgb(253, 253, 255);
+    background: radial-gradient(circle, rgb(255, 255, 255) 46%, rgb(255, 255, 255) 85%);
 
+}
+.LOGO{
+  color: white;
+  font-size: 3.5rem;
+  padding: 1rem;
 }
 
 html {
@@ -185,9 +190,8 @@ html {
     transition: var(--tran-03);
     display: flex;
     justify-content: center;
-    background: rgb(12,14,52);
-  background: radial-gradient(circle, rgba(12,14,52,1) 46%, rgba(38,51,94,1) 85%);
-  background-image: url(./assets/fondodebancodefinitivo-transformed.webp);
+    background: rgb(253, 253, 253);
+  background: radial-gradient(circle, rgb(252, 252, 252) 46%rgb(255, 255, 255)1) ;
 }
 
 .sidebar.close ~ .home {
@@ -245,7 +249,7 @@ html {
     display: flex;
     justify-content: center;
     margin-top: 4rem;
-    color: white;
+    color: rgb(0, 0, 0);
 
 }
 
@@ -253,7 +257,7 @@ html {
     display: flex;
     justify-content: center;
     margin-top: 2.5rem;
-    color: white;
+    color: rgb(0, 0, 0);
 }
 
 .imgCards {

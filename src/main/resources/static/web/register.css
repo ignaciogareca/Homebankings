@@ -12,7 +12,9 @@
     width: 100%;
     margin: 0 auto
 }
-
+body{
+    background-image: url(./assets2/dark-paths.webp);
+}
 .container-login100 {
     width: 100%;
     min-height: 100vh;
@@ -42,19 +44,6 @@
     left: 0;
     background-color: rgba(0, 0, 0, 0.80)
 }
-
-.login_topimg {
-    border-top-left-radius: 5px;
-    border-top-right-radius: 5px;
-    width: 100%;
-    min-height: 250px;
-    position: relative;
-    background: #91B3D1 url(https://img.freepik.com/vector-premium/concepto-transacciones-bancarias-monetarias-linea-icono-banco-divisas-sobre-fondo-azul-oscuro_387612-67.jpg) no-repeat;
-    background-size: auto;
-    background-position-x: -5rem;
-    background-position-y: -2rem;
-}
-
 
 
 

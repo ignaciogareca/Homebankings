@@ -2,7 +2,9 @@ package com.mindhub.homebanking.Controllers;
 
 
 import com.mindhub.homebanking.Configurations.WebAuthentication;
+import com.mindhub.homebanking.DTO.CardDTO;
 import com.mindhub.homebanking.DTO.ClientDTO;
+import com.mindhub.homebanking.repositories.CardRepository;
 import com.mindhub.homebanking.services.AccountServices;
 import com.mindhub.homebanking.services.ClientServices;
 import com.mindhub.homebanking.models.Account;
@@ -37,7 +39,8 @@ public class ClientController {
     @Autowired
     private PasswordEncoder passwordEncoder;
 
-
+    @Autowired
+    private CardRepository cardRepository;
 
     @RequestMapping("/api/clients") //@RequestMaping es una peticion asociada a una ruta
     public List<ClientDTO> getClients() {
@@ -102,8 +105,6 @@ public class ClientController {
     public ClientDTO getall(Authentication authentication) { //sabe el que esta autenticado
         return new ClientDTO(clientServices.findByEmail(authentication.getName()));
     }
-
-
 
     public int getRandomNumber (int min, int max) {
         return (int) (Math.random() * (max - min) + min);

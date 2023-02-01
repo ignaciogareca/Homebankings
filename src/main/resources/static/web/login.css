@@ -5,7 +5,9 @@
     padding: 0px;
     box-sizing: border-box
 }
-
+body{
+    background-image: url(./assets2/dark-paths.webp);
+}
 .limiter {
     width: 100%;
     margin: 0 auto
@@ -38,7 +40,6 @@
     height: 100%;
     top: 0;
     left: 0;
-    background-color: rgba(0, 0, 0, 0.80)
 }
 
 .login_topimg {
@@ -77,7 +78,7 @@
 
 .login100-form-title {
     font-size: 25px;
-    color: #100f46;
+    color: #fdfdff;
     line-height: 1.2;
     text-transform: uppercase;
     text-align: center;
@@ -87,7 +88,7 @@
 
 .login100-form-subtitle {
     font-size: 16px;
-    color: #100f46;
+    color: #fdfdfd;
     line-height: 1.2;
     text-align: center;
     width: 100%;
@@ -391,7 +392,7 @@ input {
    .user-label {
     position: absolute;
     left: 15px;
-    color: rgb(24, 24, 124);
+    color: rgb(255, 255, 255);
     pointer-events: none;
     transform: translateY(1rem);
     transition: 150ms cubic-bezier(0.4,0,0.2,1);

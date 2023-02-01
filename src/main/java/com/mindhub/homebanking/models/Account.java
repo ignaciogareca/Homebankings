@@ -21,12 +21,9 @@ public class Account {
     @ManyToOne(fetch = FetchType.EAGER)
     @JoinColumn(name = "client_id")
     private Client client;
-
-
     private String number;
     private LocalDateTime creationDate;
     private double balance;
-
     private AccountType accountType;
 
 
@@ -41,8 +38,6 @@ public class Account {
         this.balance = balance;
         this.client= client;
         this.accountType = accountType;
-
-
     }
 
     public long getId() {

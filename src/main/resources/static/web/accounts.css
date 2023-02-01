@@ -11,12 +11,12 @@
 }
 
 .colornav {
-    --body-color:rgb(119, 108, 211);
-    --sidebar-color: #0C1633;
-    --primary-color:#15295D;
-    --primary-color-light: rgb(59, 41, 128);
-    --toggle-color: #1F3C88;
-    --text-color:white;
+  --body-color:rgb(108, 187, 211);
+  --sidebar-color: #0c2e33;
+  --primary-color:#15465d;
+  --primary-color-light: rgb(41, 103, 128);
+  --toggle-color: #1f6f88;
+  --text-color:white;
 
     /* TRANSITION */
     --tran-03: all 0.6s ease;
@@ -24,8 +24,8 @@
 }
 
 body{
-  background: rgb(12,14,52);
-    background: radial-gradient(circle, rgb(12, 14, 52) 46%, rgba(38,51,94,1) 85%);
+  background: url(./assets2/dark-paths.webp);
+    background: radial-gradient(circle, rgb(255, 255, 255) 46%, rgba(38,51,94,1) 85%);
 
 }
 
@@ -112,7 +112,7 @@ html {
         height: 30px;
         width: 30px;
         background-color: #9b9fa7;
-        color: #100f46;
+        color: #0f4246;
         border-radius: 100%;
         display: flex;
         align-items: center;
@@ -175,9 +175,16 @@ html {
   width: 3.7rem;
   height: 3.7rem;
   margin-top: 0.3rem;
-
+  
 }
-
+.LOGO{
+  color: white;
+  font-size: 3.5rem;
+  padding: 1rem;
+}
+body{
+  background-image: url(./assets2/dark-paths.webp);
+}
 .home {
     position: relative;
     left: 150px;
@@ -186,8 +193,7 @@ html {
     display: flex;
     justify-content: center;
     background: rgb(12,14,52);
-  background: radial-gradient(circle, rgba(12,14,52,1) 46%, rgba(38,51,94,1) 85%);
-  background-image: url(./assets/fondodebancodefinitivo-transformed.webp);
+  background: radial-gradient(circle, rgb(255, 255, 255) 46%, rgb(255, 255, 255) 85%);
 }
   
 
@@ -245,7 +251,7 @@ html {
   display: flex;
   justify-content: center;
   margin-top: 4rem;
-  color: white;
+  color: rgb(0, 0, 0);
   
 }
 
@@ -253,7 +259,7 @@ html {
   display: flex;
   justify-content: center;
   margin-top: 2.5rem;
-  color: white;
+  color: rgb(0, 0, 0);
 }
 
 .imgAccounts{
@@ -269,7 +275,7 @@ html {
   justify-content: center;
   margin-top: 5rem;
   background-color: linear-gradient(to right, #232526 0%, #414345 51%, #232526 100%);
-  color:white;
+  color:rgb(0, 0, 0);
 }
 
 .imgLoans{

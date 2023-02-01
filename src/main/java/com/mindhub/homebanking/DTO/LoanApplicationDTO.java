@@ -4,13 +4,8 @@ public class LoanApplicationDTO {
 
     private Long id;
     private Double amount;
-
     private Integer payments;
-
     private String numberDestinAccount;
-
-
-
 
 
 
@@ -21,7 +16,6 @@ public class LoanApplicationDTO {
     public Double getAmount() {
         return amount;
     }
-
 
     public String getNumberDestinAccount() {
         return numberDestinAccount;

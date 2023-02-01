@@ -38,13 +38,11 @@
                 <div class="row">
                     <div class="col-md-6"></div>
                     <div class="col-md-5 col-md-offset-1">
-                        <div class="login_topimg">
-                        </div>
-                        <div class="wrap-login100">
+                        <div class="wrap-login100 form-login">
                             <form action="#" method="post" @submit.prevent="login" class="login100-form validate-form"> <span class="login100-form-title "> Login </span> <span class="login100-form-subtitle m-b-16"> to your account </span>
                                 <div class="input-group" for="username">
                                     <input v-model="email" required="" type="text" name="text" autocomplete="off" class="input w-100">
-                                    <label class="user-label">Enter your Email</label>
+                                    <label class="user-label ">Enter your Email</label>
                                   </div>
                                 <div class="input-group mt-4" for="password">
                                     <input v-model="password" required="" type="password" name="text" autocomplete="off" class="input w-100">

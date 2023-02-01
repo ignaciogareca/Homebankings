@@ -21,6 +21,11 @@
     --tran-03: all 0.6s ease;
 
 }
+.LOGO{
+  color: white;
+  font-size: 3.5rem;
+  padding: 1rem;
+}
 
 body {
     background: rgb(12, 14, 52);
